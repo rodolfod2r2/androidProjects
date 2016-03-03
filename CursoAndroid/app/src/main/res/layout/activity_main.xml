@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rodolfo.courtcount.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearTitulo"
+        android:baselineAligned="false"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:id="@+id/TituloBR"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/campeonato"
+            android:textSize="32sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:baselineAligned="false"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/linearTitulo">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_corinthians"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/escudoA" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timeA"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorSecondaryText"/>
+
+
+            <TextView
+                android:id="@+id/placarA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valorPlacarA"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:textSize="32sp"
+                android:textColor="@color/colorSecondaryText"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnMarcarA"
+                android:id="@+id/btn_marcarA"
+                android:layout_marginBottom="8dp"
+                android:onClick="addGolTimeA"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryText"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_palmeiras"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/escudoB" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timeB"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorSecondaryText" />
+
+            <TextView
+                android:id="@+id/placarB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valorPlacarB"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:textSize="32sp"
+                android:textColor="@color/colorSecondaryText"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnMarcarB"
+                android:id="@+id/btn_marcarB"
+                android:layout_marginBottom="8dp"
+                android:onClick="addGolTimeB"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryText"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnLimpar"
+        android:id="@+id/btn_impar"
+        android:onClick="limparPlacar"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>

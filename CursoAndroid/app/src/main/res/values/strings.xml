@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Rodada da Zoeira</string>
+    <string name="campeonato">Brasileirão</string>
+
+    <string name="escudoA">corinthias</string>
+    <string name="timeA">Corinthians</string>
+    <string name="valorPlacarA">0</string>
+    <string name="btnMarcarA">Marcar Gol</string>
+
+    <string name="escudoB">palmeiras</string>
+    <string name="timeB">Palmeiras</string>
+    <string name="valorPlacarB">0</string>
+    <string name="btnMarcarB">Marcar Gol</string>
+
+
+    <string name="btnLimpar">Limpar Placar</string>
+
+
+</resources>
